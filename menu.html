@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: rgb(255, 215, 163);
+            padding: 30px;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2{
+    border-bottom: 2px solid #f96400;
+}
+
+ul{
+    font-family:sans-serif; 
+    font-size: 20px; 
+    padding: 10px; 
+    list-style:none ;
+}
+
+
+.filter-coffee,.masala-dose {
+    border: #f96400;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #060606;
+}
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">MENU</h1>
+    
+
+    <div style="width: 60%; margin: auto; padding: 20px; border-radius: 20px; 
+                box-shadow : 0 0 17px #060606; background-color: #f8dab2;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;gap: 20px;">
+            <div style="flex: 1;"><h2>Signature Filter Coffee</h2>
+                <ul style="display: flex; flex-direction: column; gap: 10px;">
+                    <li>Special Filter Coffee(75% beans, 25% chickory)..................25/-</li>
+                    <li>Mysore Filter Coffee(85% beans, 15% chickory)..................35/-</li>
+                    <li>Jaggery Special Filter Coffee(75% beans, 25% chickory)....40/-</li>
+                    <li>Pure Chikkamagalur Coffee(100% beans)...........................40/-</li>
+                </ul>
+            </div>
+            <div style="margin-top: 40px; margin-bottom: 10px;">
+            <img src="filter_coffee.png" width="150px" class="filter-coffee" height="200px" alt="">
+            </div>
+        </div>
+
+        <div style="display: flex;justify-content: space-between; align-items: flex-start; gap: 20px;">
+            <div style="flex: 1;">
+                <h2>Hot 'n' Fresh Savouries</h2>
+                <ul style="display: flex; flex-direction: column; gap: 7px;">
+                    <li>Idly (1 nos.)...........21/-</li>
+                    <li>Vada (1 nos.)........33/-</li>
+                    <li>Kharabath ...........36/-</li>
+                    <li>Kesaribath ..........36/-</li>
+                    <li>Benne Masale Dose....55/-</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <img src="masala_dose.png" class="masala-dose" width="200px" height="200px">
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>
