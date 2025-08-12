@@ -6,11 +6,12 @@
     <title>Document</title>
 
     <style>
-        body{
-            background-color: rgb(255, 215, 163);
-            padding: 30px;
-            animation: fadeIn 0.6s ease-in;
-        }
+        body {
+      background-color: rgb(250, 212, 162);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding-top: 70px; 
+    }
 
         @keyframes fadeIn {
   from {
@@ -22,7 +23,8 @@
 }
 
 h2{
-    border-bottom: 2px solid #f96400;
+    border-bottom:  2px solid #f96400;
+    padding: 5px 0 ;
 }
 
 ul{
@@ -38,14 +40,68 @@ ul{
     border-radius: 20px;
     box-shadow: 0 0 10px #060606;
 }
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #954805;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 0 50px #954805 ; 
+    }
+
+    .navbar a {
+      color: rgb(251, 151, 50);
+      padding: 15px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 1;
+      padding : 6px 12px;
+      border-radius: 5px;
+      display: inline;
+      font-size: 20px;
+      transition: rgb(255, 195, 83) 0.3s ease;
+    }
+
+    .navbar a:hover{
+        color: #f0b07b;
+        animation: fadeIn 0.6s timing-function delay iteration-count direction fill-mode;
+    }
+
+    body{
+            background-color: rgb(255, 215, 163);
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+        }
     </style>
 </head>
 <body>
-    
+    <div class="navbar"  >
+    <a href="index.html">Home</a>
+    <a href="#top" style="background-color: rgb(255, 255, 255); margin: auto;">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
     <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">MENU</h1>
-    
+    <br>
 
-    <div style="width: 60%; margin: auto; padding: 20px; border-radius: 20px; 
+    <div style="width: 60%; margin: auto; padding: 20px; border-radius: 20px; text-align: justify;
                 box-shadow : 0 0 17px #060606; background-color: #f8dab2;">
         <div style="display: flex; justify-content: space-between; align-items: flex-start;gap: 20px;">
             <div style="flex: 1;"><h2>Signature Filter Coffee</h2>
@@ -53,7 +109,8 @@ ul{
                     <li>Special Filter Coffee(75% beans, 25% chickory)..................25/-</li>
                     <li>Mysore Filter Coffee(85% beans, 15% chickory)..................35/-</li>
                     <li>Jaggery Special Filter Coffee(75% beans, 25% chickory)....40/-</li>
-                    <li>Pure Chikkamagalur Coffee(100% beans)...........................40/-</li>
+                    <li>Chikkamagalur Pure Coffee(100% beans)...........................40/-</li>
+                    <li>Coorg Pure Arabica Coffee(100% beans))...........................40/-</li>
                 </ul>
             </div>
             <div style="margin-top: 40px; margin-bottom: 10px;">
@@ -65,11 +122,11 @@ ul{
             <div style="flex: 1;">
                 <h2>Hot 'n' Fresh Savouries</h2>
                 <ul style="display: flex; flex-direction: column; gap: 7px;">
-                    <li>Idly (1 nos.)...........21/-</li>
-                    <li>Vada (1 nos.)........33/-</li>
-                    <li>Kharabath ...........36/-</li>
-                    <li>Kesaribath ..........36/-</li>
-                    <li>Benne Masale Dose....55/-</li>
+                    <li>Idly (1 nos.).......................21/-</li>
+                    <li>Vada (1 nos.)....................33/-</li>
+                    <li>Kharabath ........................36/-</li>
+                    <li>Kesaribath .......................36/-</li>
+                    <li>Benne Masale Dose.........55/-</li>
                 </ul>
             </div>
 

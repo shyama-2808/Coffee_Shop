@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee shop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: rgb(250, 212, 162);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding-top: 70px; 
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #954805;
+      z-index: 1000;
+      padding: 10px;
+      box-shadow: 0 0 50px #954805 ; 
+    }
+
+    .navbar a {
+      color: rgb(251, 151, 50);
+      padding: 15px 15px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 1;
+      padding : 6px 12px;
+      border-radius: 5px;
+      display: inline;
+      font-size: 20px;
+      transition: rgb(255, 195, 83) 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #f0b07b;
+      animation: fadeIn 0.5 ease-in;
+    }
+
+    
+
+    img {
+      max-width: 90%;
+      width:550px ;
+    height:470px ;
+      border-radius: 20px;
+      box-shadow: 0 0 50px rgb(0, 0, 0);
+    }
+   
+    .timings-table {
+  margin: 20px auto;
+  border-collapse: separate;
+  width: fit-content;
+  background-color: #ffd66f;
+  font-family: Arial, sans-serif;
+  color: #3e2723;
+  font-size: 18px;
+  border-radius: 20px;
+  border-spacing:0px;
+  overflow: hidden;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timings-table td , .timings-table th {
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  padding: 12px 20px;
+  border: 2px solid #5c3300;
+  text-align: left;
+}
+
+body{
+            background-color: rgb(255, 215, 163);
+            animation: fadeIn 0.2s ease-in;
+        }
+
+        @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar"  >
+    <a href="index.html" style="background-color: rgb(255, 255, 255); margin: auto;" >Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+  <br>
+  <h1>Welcome to Namma Coffee Cafe</h1><br>
+
+  <img src="coffee_shop.png" alt="Coffee Shop"  >
+  <br><br>
+  <p style="font-size: x-large; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i><b>“Authentic Filter Kaapi, Heartfelt Vibes”</b></i></p>
+  <pre style="font-size: x-large; font-family: Verdana, Geneva, Tahoma, sans-serif;"><i>
+  Welcome to Namma Coffee Cafe, where tradition meets taste in every cup.
+  We serve authentic South Indian filter coffee brewed with love and rich heritage.
+  Step in for a cozy ambiance, warm smiles, and the true flavor of the South.
+  </i></pre>
+
+  <h2 style="font-family: sans-serif;">Timings</h2>
+  <table class="timings-table">
+    <tr>
+        <td style="border-top-left-radius: 20px;"></td>
+        <th><b>Morning</b></th>
+        <th style="border-top-right-radius: 20px; "><b>Evening</b></th>
+    </tr>
+    <tr>
+        <td><b>Mon-Fri</b></td>
+        <td style="color: green;"><b>6 AM - 12 PM</b></td>
+        <td style="color: green;"><b>3 PM - 7 PM</b></td>
+    </tr>
+    <tr>
+        <td><b>Saturday</b></td>
+        <td style="color: green;"><b>7 AM - 12 PM</b></td>
+        <td style="color: red;"><b>Closed</b></td>
+    </tr>
+    <tr><td style="border-bottom-left-radius: 20px;"><b>Sunday</b></td>
+    <td style="color: red;"><b>Closed</b></td>
+    <td style="border-bottom-right-radius: 20px; color: red;"><b>Closed</b></td></tr>
+  </table>
+
+
+
+</body>
+</html>
